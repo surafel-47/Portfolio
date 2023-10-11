@@ -516,10 +516,11 @@ body::-webkit-scrollbar-track {
     .socialLinksCard a{
         display: block;
         width: 70%;
+        text-decoration: none;
     }
     .socialLinksCard a img {
         display: block;
-        height: 50%;
+        height: 30%;
         width: auto;
         float: none;
     }

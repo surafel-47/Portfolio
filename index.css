@@ -252,6 +252,12 @@ iframe{
 
 
 @media (max-width: 580px){
+
+    .topNavBarRightArea span {
+        font-size: 5vw;
+    }
+
+    
     .topNavBarRightArea .tabsRight {
         display:none;
     }
