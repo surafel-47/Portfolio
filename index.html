@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surafel's Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="others/lottieAssetRunScript.js"></script>
+  </head>
+  <body>
+    <nav class="topNavBar">
+      <div class="topNavBarLeftArea">
+        <img
+          class="profileImg"
+          src="assets/profilePic.png"
+          alt="profile Image"
+        />
+      </div>
+      <div class="topNavBarRightArea">
+        <span>Surafel Zewdu's Portfolio!</span>
+
+        <div class="tabsRight">
+          <a href="#" onclick="changePage('homePage.html')">Home</a>
+          <a href="#" onclick="changePage('./Projects/Flutter/Flutter.html')"
+            >My Projects</a
+          >
+          <a href="https://github.com/surafel47" target="_blank">GitHub</a>
+        </div>
+        <button class="hiddenNavBarBtn"></button>
+      </div>
+    </nav>
+    <div class="bgFluidAnimationDiv">
+      <div class="topLeft"></div>
+      <div class="topRight"></div>
+    </div>
+    <div class="hiddenNavBarItemsDiv">
+      <div class="leftSide"></div>
+      <div class="rightSide">
+        <a href="#" class="homeNav" onclick="changePage('homePage.html')"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="projNav"
+          onclick="changePage('./Projects/Flutter/Flutter.html')"
+          >My Projects</a
+        >
+        <a href="#" class="gitHubNav">GitHub</a>
+      </div>
+    </div>
+    <div class="mainPanel">
+      <iframe
+        src="homePage.html"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe>
+    </div>
+  </body>
+</html>
+
+
+
+<script>
+  function changePage(url){
+    var iframe=document.querySelector("iframe");
+    iframe.src=url;
+    const navbar = document.querySelector('.hiddenNavBarItemsDiv');
+    navbar.classList.toggle('active');
+  }
+
+
+    // Get references to the button and the navigation bar
+  const toggleButton = document.querySelector('.hiddenNavBarBtn');
+  const navbar = document.querySelector('.hiddenNavBarItemsDiv');
+
+  const mainPanel = document.querySelector('.mainPanel');
+
+  const leftSide = document.querySelector('.leftSide');
+
+  leftSide.addEventListener('click', function() {
+    navbar.classList.toggle('active');
+  });
+
+  toggleButton.addEventListener('click', function() {
+    navbar.classList.toggle('active');
+  });
+</script>

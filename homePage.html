@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homePage.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbit&display=swap"
+    rel="stylesheet"
+  />
+  <script src="others/lottieAssetRunScript.js"></script>
+
+</head>
+<body>
+     <section class="socialsLinksTopSection">
+        <a href="#socialsLinksBottomSection">
+          <img src="assets/telegram.svg" alt="" />
+        </a>
+        <a href="#socialsLinksBottomSection">
+
+          <img src="assets/gmail.svg" alt="" />
+        </a>
+        <a href="#socialsLinksBottomSection">
+
+          <img src="assets/github.svg" alt="" />
+        </a>
+        <a href="#socialsLinksBottomSection">
+
+          <img src="assets/phone.svg" alt="" />
+        </a>
+      </section>
+      <section class="aboutMeSection">
+        <p>
+          <span>Hi, I'm &lt;Surafel Zewdu&#62;</span>
+          <br />
+          &nbsp &nbsp
+        </p>
+        <div class="myLottieAnimationDiv"></div>
+      </section>
+      <section class="mySkillsSection">
+        <ul>
+          <span>My Skills</span>
+          <li
+            class="flutter"
+            onmouseover="displayCard('FlutterDetails')"
+            onmouseleave="removeCard('FlutterDetails')"
+          >
+            Flutter
+          </li>
+          <li class="asp">Node.js(Express) and MongoDB</li>
+          <li
+            class="htmlCssJs"
+            onmouseover="displayCard('HTMLCssJsDetails')"
+            onmouseleave="removeCard('HTMLCssJsDetails')"
+          >
+            HTML5, CSS3, JS(ES6)
+          </li>
+          <li 
+            class="asp"
+            onmouseover="displayCard('AspDetails')"
+            onmouseleave="removeCard('AspDetails')"
+          >
+            ASP.NET MVC
+          </li>
+          <li 
+            class="database"
+            onmouseover="displayCard('SQLDetails')"
+            onmouseleave="removeCard('SQLDetails')"
+          >
+            Database (SQL Server, MySQL)
+          </li>
+          <li class="react">React</li>
+          <li 
+            class="java"
+            onmouseover="displayCard('JavaCSharp')"
+            onmouseleave="removeCard('JavaCSharp')"
+          >
+           Java and C#
+          </li>
+        </ul>
+
+        <div class="Details FlutterDetails">
+          <div class="SpiningBackground"></div>
+          <div class="DetailsInnerDiv">
+            Two Years experience working with flutter framework and dart
+            <br><br>
+            <ul>
+              <li>Cross-Platform Development</li>
+              <li>State Management</li>
+              <li>Package Management</li>
+              <li>UI/UX Design</li>
+              <li>Responsive Layouts</li>
+              <li>Rest API intgration</li>
+            </ul>
+          </div>
+        </div>
+        <div class="Details HTMLCssJsDetails">
+          <div class="SpiningBackground"></div>
+          <div class="DetailsInnerDiv">
+            Proficient in writing semantic HTML5 markup, ensuring SEO-friendliness and 
+            creating structured documents using HTML.
+            <br><br>
+           <ul>
+            <li>Structured documents using HTML</li>
+            <li>DOM real-time manipulation</li>
+            <li>Event handling responsive UIs</li>
+            <li>Responsive design with media queries</li>
+            <li>CSS animations and transitions</li>
+          </ul>
+
+          </div>
+        </div>
+        <div class="Details AspDetails">
+          <div class="SpiningBackground"></div>
+          <div class="DetailsInnerDiv">
+            Proficient in ASP.NET, a CSharp framework for building dynamic web applications and services
+            <br><br>
+            <ul>
+              <li>MVC (Model-View-Controller) Architecture</li>
+              <li>Entity Framework</li>
+              <li>Views and Razor Syntax</li>
+              <li>ASP.NET Core's middleware pipelining</li>
+             </ul>
+          </div>
+        </div>
+        <div class="Details SQLDetails">
+          <div class="SpiningBackground"></div>
+          <div class="DetailsInnerDiv">
+            My focus is on relational models, Tables, Triggers, Stored Procedures and Functions
+            <br><br>
+            <ul>
+              <li>SQL (Structured Query Language)</li>
+              <li>Relationships(1:1)(1:M)(N:M)</li>
+              <li>Triggers and Procedures</li>
+              <li>Design normalized database schemas</li>
+             </ul>
+          </div>
+        </div>
+        <div class="Details JavaCSharp">
+          <div class="SpiningBackground"></div>
+          <div class="DetailsInnerDiv">
+            Experience with Java and C# with a focus on Object-Oriented Programming (OOP) concepts
+            <br><br>
+            <ul>
+              <li>Encapsulation, and Abstraction.</li>
+              <li>Inheritance and Polymorphism</li>
+              <li>Triggers and Procedures</li>
+              <li>Unit Testing</li>
+              <li> Test-Driven Development (TDD)</li>
+             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="myProgramingLangSections">
+        <div class="logoSlider">
+          <img src="assets/programmingLangs/api.svg" alt="Api's" />
+          <img src="assets/programmingLangs/aspnet.svg" alt="Api's" />
+          <img src="assets/programmingLangs/csharp.svg" alt="Api's" />
+          <img src="assets/programmingLangs/flutter.svg" alt="Api's" />
+          <img src="assets/programmingLangs/github.svg" alt="Api's" />
+          <img src="assets/programmingLangs/java.svg" alt="Api's" />
+          <img src="assets/programmingLangs/js.svg" alt="Api's" />
+          <img src="assets/programmingLangs/mysql.svg" alt="Api's" />
+          <img src="assets/programmingLangs/php.svg" alt="Api's" />
+          <img src="assets/programmingLangs/sqlServer.svg" alt="Api's" />
+        </div>
+      </section>
+
+      <section class="socialsLinksBottomSection" id="socialsLinksBottomSection">
+        <div class="socialLinksCard">
+          <a href="https://t.me/Zufan47" target="_blank">
+            <img src="assets/telegram.svg" alt="" />
+            <span>@Zufan47 </span>
+          </a>
+          <button onclick="copyTextToClipboard('@Zufan47')"></button>
+        </div>
+        <div class="socialLinksCard">
+          <a href="mailto:surafelzewdu2018@gmail.com" target="_blank">
+            <img src="assets/gmail.svg" alt="" />
+            <span>surafelzewdu2018@gmail.com </span>
+          </a>
+          <button onclick="copyTextToClipboard('surafelzewdu2018@gmail.com')"></button>
+        </div>
+        <div class="socialLinksCard">
+          <a href="https://github.com/surafel-47" target="_blank">
+            <img src="assets/github.svg" alt="" />
+            <span>@surafel-47 </span>
+          </a>
+          <button onclick="copyTextToClipboard('https://github.com/surafel-47')"></button>
+        </div>
+        <div class="socialLinksCard">
+          <a href="tel:+251965651110" target="_blank">
+            <img src="assets/phone.svg" alt="" />
+            <span>+251-965651110 </span>
+          </a>
+          <button onclick="copyTextToClipboard('+251-965651110')"></button>
+        </div>
+      </section>
+</body>
+</html>
+
+<script>
+    
+  // Initialize the Lottie animation
+  var animation = lottie.loadAnimation({
+    container: document.querySelector(".myLottieAnimationDiv"), // Specify the container element
+    renderer: "svg", // Choose the renderer (SVG, Canvas, HTML)
+    loop: true, // Set whether the animation should loop
+    autoplay: true, // Set whether the animation should play automatically
+    path: "assets/robot.json", // Specify the path to your Lottie JSON file
+  });
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const textElement = document.querySelector(".aboutMeSection p");
+    const text = " Greetings, I'm a 4th year Computer Science Student at HiLCoE College, Addis Ababa. My experience includes a grasp of both front and back-end development (full-stack). In-terms of Front-End, i Mainly focus on Flutter and Cross-Platform development. For back-end development, I'm well experienced with  ASP.NET and Entity Framework, Php and Additionally, my experience extends to Node.js(Express)  and MongoDB, complemented by a solid understanding of Relational Database concepts. ";
+    let index = 0;
+  
+    function typeWriter() {
+      if (index < text.length) {
+        textElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, Math.random() * 30); // Adjust typing speed here
+      }
+    }
+    typeWriter();    
+  });
+
+
+
+
+
+  function copyTextToClipboard(txt){
+    navigator.clipboard.writeText(txt);
+  }
+
+
+
+  function displayCard(cardClassName) {
+      document.querySelector("." + cardClassName).style.display = "block";
+  }
+  function removeCard(cardClassName) {
+      document.querySelector("." + cardClassName).style.display = "none";
+  }
+
+
+</script>

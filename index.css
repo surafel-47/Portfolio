@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: rgb(29, 25, 25);
+
+}
+
+
+
+
+
+
+
+
+
+.topNavBar {
+    display: flex;
+    width: 100%;
+    height: 17vh;
+    background-image: linear-gradient(to right top, #060607, #050405, #030303, #020102, #000000);
+    color: white;
+    z-index: 20;
+    position: fixed;
+    box-shadow: 0px 0px 10px 4px rgba(22, 20, 20, 0.836);
+}
+
+.topNavBar .topNavBarLeftArea {
+    padding: 1vh;
+    height: 100%;
+  
+}
+
+.topNavBarLeftArea .profileImg {
+    margin-left: 4%;
+    border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
+    object-fit: cover;
+    transition: 0.3s;
+    box-shadow: 2px 5px 10px rgb(27, 26, 26);
+}
+
+.topNavBarLeftArea .profileImg:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 10px 10px rgb(7, 7, 7);
+
+}
+
+.topNavBar .topNavBarRightArea {
+
+    flex-grow: 1;
+    margin-left: 1vw;
+    position: relative;
+    height: 100%;
+    width: max-content;
+  
+
+}
+
+.topNavBarRightArea span {
+    font-family: 'Diphylleia';
+    font-weight: bold;
+    font-size: 4vw;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -70%);
+    float: left;
+}
+
+.topNavBarRightArea .tabsRight {
+    display: flex;
+    gap: 1.5vw;
+    font-size: 3vh;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    margin: 1vh;
+}
+
+
+
+
+.tabsRight a {
+    background-color: rgb(30, 18, 49);
+    color: rgb(194, 184, 184);
+    border-radius: 10px;
+    height: 5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+
+}
+
+
+.tabsRight a:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.hiddenNavBarBtn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bgFluidAnimationDiv {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    height: 100%;
+    z-index: -20;
+    filter: blur(80px);
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+/*
+.topLeft {
+    position: absolute;
+    top: 0vh;
+    left: 100vw;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 30%;
+    filter: blur(20px);
+    background-image: linear-gradient(90deg,
+            rgb(59, 14, 141),
+            rgb(62, 83, 12),
+            rgb(49, 21, 21),
+            rgb(21, 7, 90));
+    transition: 1.2s;
+    animation: leftAnimation 10s linear infinite;
+}
+
+@keyframes leftAnimation {
+
+    0%,
+    100% {
+        top: 100%;
+        left: 100%;
+    }
+
+    20% {
+        top: 70%;
+        left: 70%;
+    }
+
+    40% {
+        top: 10%;
+        left: 20%;
+    }
+
+    60% {
+        top: 40%;
+        left: 20%;
+    }
+}
+
+.topRight {
+    filter: blur(30px);
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 40%;
+    background-image: linear-gradient(0deg,
+            rgb(27, 43, 88),
+            rgb(32, 32, 63),
+            rgb(82, 55, 55),
+            rgb(21, 7, 95));
+    transition: 1s;
+    animation: rightAnimation 10s linear infinite;
+}
+
+@keyframes rightAnimation {
+
+    0%,
+    100% {
+        top: 0;
+        left: 0;
+    }
+
+    20% {
+        top: 70%;
+        left: 70%;
+    }
+
+    40% {
+        top: 10%;
+        left: 50%;
+    }
+} 
+*/
+
+
+.mainPanel {
+    padding-top: 17vh;
+    color: white;
+    width: 100%;
+    height: 98vh;
+    overflow: hidden;
+
+}
+
+
+
+iframe{
+    width: 100%;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 580px){
+    .topNavBarRightArea .tabsRight {
+        display:none;
+    }
+    .hiddenNavBarBtn{
+        display: block;
+        position: sticky;
+        top: 12vh;
+        left:90vw;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 4px;
+        background-image: url(assets/navBar.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: none;
+        background-size: 100%;
+    }
+
+  
+    .hiddenNavBarItemsDiv{
+        position: absolute;
+        display: none;
+        top: 17vh;
+        right: -100%;
+        width: 100%;
+        height: 83vh;
+        z-index: 200;
+        backdrop-filter: blur(2px);
+        transition: right 0.3s ease;
+    }
+
+    .hiddenNavBarItemsDiv.active{
+        right: 0;
+        display: block;
+    }
+
+
+    .leftSide{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    .rightSide{
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column; 
+        gap: 5%;
+        align-items: start; 
+        float: right;
+        width: 70%;
+        height: 100%;
+        background-color: rgb(35, 38, 39);
+    }
+    .rightSide a{
+        text-decoration: none;
+        padding-left: 22%;
+        font-size: 1.4em;
+        color: white;
+        display: block;
+        margin-left: 5%;
+        width: 90%;
+        height: 10%;
+        padding-top: 7%;
+        background-repeat: no-repeat;
+        background-size: 17%;
+        background-color: #00000025;
+        border-radius: 5px;
+        background-position: 5px 40%;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.486);
+        transition: 0.15s;
+    }
+    .rightSide a:hover{
+        transform: scale(1.02);
+        background-color: #00000052;
+    }
+    .rightSide .homeNav{
+        background-image: url(assets/HomeNavBar.png);
+    }
+
+    .rightSide .projNav{
+        background-image: url(assets/ProjectsNavBar.png);
+    }
+
+    .rightSide .gitHubNav{
+        background-image: url(assets/githubNavBar.png);
+    }
+
+
+
+
+
+}
